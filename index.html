@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <title>Shift Test</title>
+</head>
+<body>
+
+<input class="form-control" type="text" placeholder="Название книги" id="search-text"  onkeyup="findElem()" >
+
+<div class="table">
+    <div class="thead">
+        <div class="tr">
+            <div class="th">ID</div>
+            <div class="th">Автор</div>
+            <div class="th">Название</div>
+            <div class="th">Цена</div>
+            <div class="th">Кол-во</div>
+        </div>
+    </div>
+    <div class="tbody">
+        <div class="tr">
+            <div class="td" data-label="ID">01</div>
+            <div class="td" data-label="Автор">Виктор Пелевин</div>
+            <div class="td" data-label="Название">Empire V</div>
+            <div class="td" data-label="Цена">899 руб.</div>
+            <div class="td" data-label="Кол-во">15</div>
+        </div>
+
+        <div class="tr">
+            <div class="td" data-label="ID">02</div>
+            <div class="td" data-label="Автор">Борис Пастернак</div>
+            <div class="td" data-label="Название">Доктор Живаго</div>
+            <div class="td" data-label="Цена">402 руб.</div>
+            <div class="td" data-label="Кол-во">5</div>
+        </div>
+
+        <div class="tr">
+            <div class="td" data-label="ID">03</div>
+            <div class="td" data-label="Автор">Джордж Оруэлл</div>
+            <div class="td" data-label="Название">1984</div>
+            <div class="td" data-label="Цена">499 руб.</div>
+            <div class="td" data-label="Кол-во">2</div>
+        </div>
+
+        <div class="tr">
+            <div class="td" data-label="ID">04</div>
+            <div class="td" data-label="Автор">Франц Кафка</div>
+            <div class="td" data-label="Название">Замок</div>
+            <div class="td" data-label="Цена">512 руб.</div>
+            <div class="td" data-label="Кол-во">12</div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
