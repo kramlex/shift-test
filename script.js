@@ -12,16 +12,11 @@ function findElem(){
     const otherDivs = []
     titleDivs.forEach(elem => {
         elem.style.backgroundColor = defaultColor
-        elem.innerText.toLowerCase().indexOf(title) === -1 ? otherDivs.push(elem) : foundDivs.push(elem)
+        elem.innerText.toLowerCase().indexOf(title) === -1 ? otherDivs.push(elem) : foundDivs.push(elem);
     })
-    console.log(foundDivs, otherDivs)
 
-    otherDivs.forEach(elem => {
-        elem.style.backgroundColor = defaultColor
-    })
+    otherDivs.forEach(elem => elem.style.backgroundColor = defaultColor)
     if(!title) return
-    foundDivs.forEach(elem => {
-        elem.style.backgroundColor = red
-    })
+    foundDivs.forEach(elem => elem.style.backgroundColor = red)
 
 }
